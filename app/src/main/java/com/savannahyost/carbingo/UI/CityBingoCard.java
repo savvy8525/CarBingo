@@ -12,5 +12,7 @@ public class CityBingoCard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city_bingo_card);
+
+
     }
 }
