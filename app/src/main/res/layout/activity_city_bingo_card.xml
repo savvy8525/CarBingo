@@ -14,19 +14,31 @@
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="90dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="66dp"
-        android:layout_height="80dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="166dp" />
+    <Button
+        android:id="@+id/button1_1"
+        android:layout_width="75dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="7dp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="161dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="71dp"
-        android:layout_height="91dp"
+        android:id="@+id/button1_2"
+        android:layout_width="75dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="89dp"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/button1_1"
         tools:layout_editor_absoluteY="161dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
