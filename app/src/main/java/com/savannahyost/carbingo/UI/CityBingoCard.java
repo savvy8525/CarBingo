@@ -47,36 +47,433 @@ public class CityBingoCard extends AppCompatActivity {
         Button button5_4 = findViewById(R.id.button5_4);
         Button button5_5 = findViewById(R.id.button5_5);
 
-
+        button1_1.setText(randomItems[0][0]);
+        button1_2.setText(randomItems[0][1]);
+        button1_3.setText(randomItems[0][2]);
+        button1_4.setText(randomItems[0][3]);
+        button1_5.setText(randomItems[0][4]);
+        button2_1.setText(randomItems[1][0]);
+        button2_2.setText(randomItems[1][1]);
+        button2_3.setText(randomItems[1][2]);
+        button2_4.setText(randomItems[1][3]);
+        button2_5.setText(randomItems[1][4]);
+        button3_1.setText(randomItems[2][0]);
+        button3_2.setText(randomItems[2][1]);
+        button3_3.setText(randomItems[2][2]);
+        button3_4.setText(randomItems[2][3]);
+        button3_5.setText(randomItems[2][4]);
+        button4_1.setText(randomItems[3][0]);
+        button4_2.setText(randomItems[3][1]);
+        button4_3.setText(randomItems[3][2]);
+        button4_4.setText(randomItems[3][3]);
+        button4_5.setText(randomItems[3][4]);
+        button5_1.setText(randomItems[4][0]);
+        button5_2.setText(randomItems[4][1]);
+        button5_3.setText(randomItems[4][2]);
+        button5_4.setText(randomItems[4][3]);
+        button5_5.setText(randomItems[4][4]);
 
 //        button1_1.setBackgroundColor(Color.GREEN);
         button1_1.setOnClickListener(new View.OnClickListener() {
             int click = 1;
             @Override
             public void onClick(View v) {
-//                click = 1;
                 if(click == 1) {
                     button1_1.setBackgroundColor(R.drawable.button_background);
                     click = 2;
-                    System.out.println(click);
+//                    System.out.println(click);
                 } else if(click == 2) {
                     button1_1.setBackgroundColor(Color.TRANSPARENT);
                     click = 1;
-                    System.out.println(click);
+//                    System.out.println(click);
                 }
 
             }
         });
+        button1_2.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button1_2.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button1_2.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
 
-//        button1_1.set
+            }
+        });
+        button1_3.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button1_3.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button1_3.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
 
+            }
+        });
+        button1_4.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button1_4.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button1_4.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
 
+            }
+        });
+        button1_5.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button1_5.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button1_5.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
 
-        button1_1.setText(randomItems[0][0]);
+            }
+        });
+        button2_1.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button2_1.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button2_1.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
 
-//        Button button = findViewById(R.id.button);
-//        button.setBackgroundColor(Color.RED);
-//        button.setBackground(Color.MAGENTA);
+            }
+        });
+        button2_2.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button2_2.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button2_2.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button2_3.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button2_3.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button2_3.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button2_4.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button2_4.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button2_4.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button2_5.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button2_5.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button2_5.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button3_1.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button3_1.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button3_1.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button3_2.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button3_2.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button3_2.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button3_3.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button3_3.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button3_3.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button3_4.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button3_4.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button3_4.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button3_5.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button3_5.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button3_5.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button4_1.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button4_1.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button4_1.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button4_2.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button4_2.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button4_2.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button4_3.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button4_3.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button4_3.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button4_4.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button4_4.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button4_4.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button4_5.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button4_5.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button4_5.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button5_1.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button5_1.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button5_1.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button5_2.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button5_2.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button5_2.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button5_3.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button5_3.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button5_3.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button5_4.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button5_4.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button5_4.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
+        button5_5.setOnClickListener(new View.OnClickListener() {
+            int click = 1;
+            @Override
+            public void onClick(View v) {
+                if(click == 1) {
+                    button5_5.setBackgroundColor(R.drawable.button_background);
+                    click = 2;
+//                    System.out.println(click);
+                } else if(click == 2) {
+                    button5_5.setBackgroundColor(Color.TRANSPARENT);
+                    click = 1;
+//                    System.out.println(click);
+                }
+
+            }
+        });
 
     }
 }
