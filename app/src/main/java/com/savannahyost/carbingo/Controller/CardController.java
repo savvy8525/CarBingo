@@ -7,7 +7,7 @@ public class CardController {
     public CityCard cityCard = new CityCard();
 
     //Randomizes the city bingo card
-    public void randomCityCard() {
+    public String[][] randomCityCard() {
         String[][] card = cityCard.getCityCard();
         for (int i = 0; i < card.length; i++) {
             for (int j = 0; j < card[i].length; j++) {
@@ -21,6 +21,8 @@ public class CardController {
             }
 
         }
+
+        return card;
     }
 
 }
