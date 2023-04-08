@@ -25,4 +25,6 @@ public class CardController {
         return card;
     }
 
+//    public boolean rowBingo{}
+
 }

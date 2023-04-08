@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.savannahyost.carbingo.Controller.CardController;
 import com.savannahyost.carbingo.R;
@@ -20,6 +22,15 @@ public class CityBingoCard extends AppCompatActivity {
         String[][] randomItems = cardController.randomCityCard();;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city_bingo_card);
+
+        boolean[][] isClicked = new boolean[5][5];
+        for (int i = 0; i < isClicked.length; i++) {
+            for (int j = 0; j < isClicked.length; j++) {
+                isClicked[i][j] = false;
+            }
+        }
+
+//        final boolean hasBingo = false;
 
         Button button1_1 = findViewById(R.id.button1_1);
         Button button1_2 = findViewById(R.id.button1_2);
@@ -73,83 +84,186 @@ public class CityBingoCard extends AppCompatActivity {
         button5_4.setText(randomItems[4][3]);
         button5_5.setText(randomItems[4][4]);
 
+
+
 //        button1_1.setBackgroundColor(Color.GREEN);
         button1_1.setOnClickListener(new View.OnClickListener() {
-            int click = 1;
+//            int click = 1;
+boolean notClicked = true;
+            int count = 0;
             @Override
             public void onClick(View v) {
-                if(click == 1) {
+                if(notClicked) {
                     button1_1.setBackgroundColor(R.drawable.button_background);
-                    click = 2;
+//                    click = 2;
+                    notClicked = false;
+                    isClicked[0][0] = true;
 //                    System.out.println(click);
-                } else if(click == 2) {
+                } else {
                     button1_1.setBackgroundColor(Color.TRANSPARENT);
-                    click = 1;
+//                    click = 1;
+                    notClicked = true;
+                    isClicked[0][0] = false;
+                    count = 0;
 //                    System.out.println(click);
+                }
+
+                for (int i = 0; i < isClicked.length; i++) {
+                    if(isClicked[0][i]) {
+//                        hasBingo = true;
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+
+                if(count == 5) {
+                    Toast.makeText(CityBingoCard.this, "BINGO!", Toast.LENGTH_LONG).show();
+                    System.out.println("bingo!");
                 }
 
             }
         });
         button1_2.setOnClickListener(new View.OnClickListener() {
-            int click = 1;
+            boolean notClicked = true;
+            int count = 0;
             @Override
             public void onClick(View v) {
-                if(click == 1) {
+                if(notClicked) {
                     button1_2.setBackgroundColor(R.drawable.button_background);
-                    click = 2;
+//                    click = 2;
+                    notClicked = false;
+                    isClicked[0][1] = true;
 //                    System.out.println(click);
-                } else if(click == 2) {
+                } else {
                     button1_2.setBackgroundColor(Color.TRANSPARENT);
-                    click = 1;
+//                    click = 1;
+                    notClicked = true;
+                    isClicked[0][1] = false;
+                    count = 0;
 //                    System.out.println(click);
+                }
+
+                for (int i = 0; i < isClicked.length; i++) {
+                    if(isClicked[0][i]) {
+//                        hasBingo = true;
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+
+                if(count == 5) {
+                    Toast.makeText(CityBingoCard.this, "BINGO!", Toast.LENGTH_LONG).show();
+                    System.out.println("bingo!");
                 }
 
             }
         });
         button1_3.setOnClickListener(new View.OnClickListener() {
-            int click = 1;
+            boolean notClicked = true;
+            int count = 0;
             @Override
             public void onClick(View v) {
-                if(click == 1) {
+                if(notClicked) {
                     button1_3.setBackgroundColor(R.drawable.button_background);
-                    click = 2;
+//                    click = 2;
+                    notClicked = false;
+                    isClicked[0][2] = true;
 //                    System.out.println(click);
-                } else if(click == 2) {
+                } else {
                     button1_3.setBackgroundColor(Color.TRANSPARENT);
-                    click = 1;
+//                    click = 1;
+                    notClicked = true;
+                    isClicked[0][2] = false;
+                    count = 0;
 //                    System.out.println(click);
+                }
+
+                for (int i = 0; i < isClicked.length; i++) {
+                    if(isClicked[0][i]) {
+//                        hasBingo = true;
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+
+                if(count == 5) {
+                    Toast.makeText(CityBingoCard.this, "BINGO!", Toast.LENGTH_LONG).show();
+                    System.out.println("bingo!");
                 }
 
             }
         });
         button1_4.setOnClickListener(new View.OnClickListener() {
-            int click = 1;
+            boolean notClicked = true;
+            int count = 0;
             @Override
             public void onClick(View v) {
-                if(click == 1) {
+                if(notClicked) {
                     button1_4.setBackgroundColor(R.drawable.button_background);
-                    click = 2;
+//                    click = 2;
+                    notClicked = false;
+                    isClicked[0][3] = true;
 //                    System.out.println(click);
-                } else if(click == 2) {
+                } else {
                     button1_4.setBackgroundColor(Color.TRANSPARENT);
-                    click = 1;
+//                    click = 1;
+                    notClicked = true;
+                    isClicked[0][3] = false;
+                    count = 0;
 //                    System.out.println(click);
+                }
+
+                for (int i = 0; i < isClicked.length; i++) {
+                    if(isClicked[0][i]) {
+//                        hasBingo = true;
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+
+                if(count == 5) {
+                    Toast.makeText(CityBingoCard.this, "BINGO!", Toast.LENGTH_LONG).show();
+                    System.out.println("bingo!");
                 }
 
             }
         });
         button1_5.setOnClickListener(new View.OnClickListener() {
-            int click = 1;
+            boolean notClicked = true;
+            int count = 0;
             @Override
             public void onClick(View v) {
-                if(click == 1) {
+                if(notClicked) {
                     button1_5.setBackgroundColor(R.drawable.button_background);
-                    click = 2;
+//                    click = 2;
+                    notClicked = false;
+                    isClicked[0][4] = true;
 //                    System.out.println(click);
-                } else if(click == 2) {
+                } else {
                     button1_5.setBackgroundColor(Color.TRANSPARENT);
-                    click = 1;
+//                    click = 1;
+                    notClicked = true;
+                    isClicked[0][4] = false;
+                    count = 0;
 //                    System.out.println(click);
+                }
+
+                for (int i = 0; i < isClicked.length; i++) {
+                    if(isClicked[0][i]) {
+//                        hasBingo = true;
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+
+                if(count == 5) {
+                    Toast.makeText(CityBingoCard.this, "BINGO!", Toast.LENGTH_LONG).show();
+                    System.out.println("bingo!");
                 }
 
             }
@@ -476,4 +590,5 @@ public class CityBingoCard extends AppCompatActivity {
         });
 
     }
+
 }
