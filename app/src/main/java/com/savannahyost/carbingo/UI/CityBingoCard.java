@@ -32,6 +32,7 @@ public class CityBingoCard extends AppCompatActivity {
 
 //        final boolean hasBingo = false;
 
+        //refactor into array
         Button button1_1 = findViewById(R.id.button1_1);
         Button button1_2 = findViewById(R.id.button1_2);
         Button button1_3 = findViewById(R.id.button1_3);
@@ -85,7 +86,7 @@ public class CityBingoCard extends AppCompatActivity {
         button5_5.setText(randomItems[4][4]);
 
 
-
+//button1_1.is
 //        button1_1.setBackgroundColor(Color.GREEN);
         button1_1.setOnClickListener(new View.OnClickListener() {
 //            int click = 1;
