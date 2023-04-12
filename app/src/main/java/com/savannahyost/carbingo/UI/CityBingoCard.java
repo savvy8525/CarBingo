@@ -1,5 +1,6 @@
 package com.savannahyost.carbingo.UI;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.savannahyost.carbingo.Controller.CardController;
 import com.savannahyost.carbingo.R;
+
 
 public class CityBingoCard extends AppCompatActivity {
 
@@ -53,8 +55,8 @@ public class CityBingoCard extends AppCompatActivity {
             }
         }
 
-        
 
+        boolean[] clicked = new boolean[25];
 
         for (int i = 0; i < buttons.length; i++) {
             buttons[i].setOnClickListener(new View.OnClickListener() {
@@ -62,15 +64,17 @@ public class CityBingoCard extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     int buttonPress = getColor(R.color.button_press_1);
-                    boolean clicked = true;
+
+
                     for (int j = 0; j < buttons.length; j++) {
-                        if(buttons[j].isPressed()) {
+
+                         if(buttons[j].isPressed() && clicked[j]) {
+                            buttons[j].setBackgroundColor(Color.TRANSPARENT);
+                            clicked[j] = false;
+                        } else if(buttons[j].isPressed()) {
                             buttons[j].setBackgroundColor(R.drawable.button_background);
-                            clicked = false;
+                            clicked[j] = true;
                         }
-//                        if(!clicked) {
-//                            buttons[j].setBackgroundColor(Color.TRANSPARENT);
-//                        }
 
                     }
 
@@ -122,6 +126,10 @@ public class CityBingoCard extends AppCompatActivity {
 //            }
 //        });
 
+
+    }
+
+    public void deselectButton() {
 
     }
 
