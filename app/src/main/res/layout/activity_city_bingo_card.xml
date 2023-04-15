@@ -39,8 +39,7 @@
                 android:id="@+id/button1_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button"/>
@@ -50,8 +49,7 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:text="Button" />
 
@@ -60,8 +58,7 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:text="Button" />
 
@@ -70,8 +67,7 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:text="Button" />
             <Button
@@ -79,8 +75,7 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:text="Button" />
 
@@ -94,8 +89,7 @@
                 android:id="@+id/button2_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -104,8 +98,7 @@
                 android:id="@+id/button2_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -114,8 +107,7 @@
                 android:id="@+id/button2_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -124,8 +116,7 @@
                 android:id="@+id/button2_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -133,8 +124,7 @@
                 android:id="@+id/button2_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -149,8 +139,7 @@
                 android:id="@+id/button3_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -159,8 +148,7 @@
                 android:id="@+id/button3_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -169,8 +157,7 @@
                 android:id="@+id/button3_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -179,8 +166,7 @@
                 android:id="@+id/button3_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -188,8 +174,7 @@
                 android:id="@+id/button3_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -204,8 +189,7 @@
                 android:id="@+id/button4_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -214,8 +198,7 @@
                 android:id="@+id/button4_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -224,8 +207,7 @@
                 android:id="@+id/button4_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -234,8 +216,7 @@
                 android:id="@+id/button4_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -243,8 +224,7 @@
                 android:id="@+id/button4_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -258,8 +238,7 @@
                 android:id="@+id/button5_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -268,8 +247,7 @@
                 android:id="@+id/button5_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -278,8 +256,7 @@
                 android:id="@+id/button5_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -288,8 +265,7 @@
                 android:id="@+id/button5_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />
@@ -297,8 +273,7 @@
                 android:id="@+id/button5_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/button_background_off"
-                android:backgroundTint="@color/button_default"
+                android:background="@drawable/button_not_pressed"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:text="Button" />

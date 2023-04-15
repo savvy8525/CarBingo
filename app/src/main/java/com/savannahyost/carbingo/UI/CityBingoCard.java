@@ -2,19 +2,16 @@ package com.savannahyost.carbingo.UI;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.graphics.Color;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.savannahyost.carbingo.Controller.CardController;
-import com.savannahyost.carbingo.Controller.CardInterface;
 import com.savannahyost.carbingo.R;
 
 
@@ -60,11 +57,11 @@ public class CityBingoCard extends AppCompatActivity {
                 public void onClick(View v) {
                     for (int j = 0; j < buttons.length; j++) {
                          if(buttons[j].isPressed() && clicked[j]) {
-                            buttons[j].setBackgroundResource(R.drawable.button_background_off);
+                            buttons[j].setBackgroundResource(R.drawable.button_not_pressed);
                             clicked[j] = false;
                              System.out.println(clicked[j]);
                         } else if(buttons[j].isPressed()) {
-                            buttons[j].setBackgroundColor(R.drawable.button_background);
+                            buttons[j].setBackgroundResource(R.drawable.button_pressed);
                             clicked[j] = true;
                         }
                     }
@@ -72,5 +69,6 @@ public class CityBingoCard extends AppCompatActivity {
             });
         }
     }
+
 
 }
