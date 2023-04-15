@@ -17,11 +17,8 @@ public class CardController {
                 String temp = card[i][j];
                 card[i][j] = card[i1][j1];
                 card[i1][j1] = temp;
-
             }
-
         }
-
         return card;
     }
 
