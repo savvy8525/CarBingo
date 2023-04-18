@@ -1,34 +1,59 @@
-package com.savannahyost.carbingo;
+package com.savannahyost.carbingo.Controller;
 
 import android.widget.Button;
 
+import com.savannahyost.carbingo.R;
+
 public class buttonFactory {
     private static boolean[][] bingoCardMatrix = new boolean[5][5];
+
 //    private static Button[][] buttonRows = new Button[5][5];
+
 
 //    public static void makeBingoCard(int id, int i, int j) {
 //        buttonRows[i][j] = findViewById(id);
 //
 //    }
 
-    //TODO: research ways to keep button from releasing state
+    //Changes the button color between transparent and orange depending on selection state
     public static void handleColorChange(Button button) {
-        if(button.isPressed()) {
-            button.setBackgroundResource(R.drawable.button_pressed);
-        }else {
+
+        if(button.isPressed() && button.isSelected()) {
             button.setBackgroundResource(R.drawable.button_not_pressed);
+            button.setSelected(false);
+        }else if(button.isPressed()) {
+            button.setBackgroundResource(R.drawable.button_pressed);
+            button.setSelected(true);
         }
     }
 
-    public static void updateGameMatrix(Button button, int k, int l) {
-        if(button.isPressed()) {
-            if(bingoCardMatrix[k][l]) {
-                bingoCardMatrix[k][l] = false;
-            } else {
-                bingoCardMatrix[k][l] = true;
-            }
 
+    //TODO: fix selection and deselection of the matrix
+    public static void updateGameMatrix(Button button, int k, int l) {
+        if (button.isPressed() && !bingoCardMatrix[k][l]){
+            bingoCardMatrix[k][l] = true;
+            System.out.println(bingoCardMatrix[k][l]);
+        } else if (button.isPressed() && bingoCardMatrix[k][l]) {
+            bingoCardMatrix[k][l] = false;
+            System.out.println(bingoCardMatrix[k][l]);
         }
+//        System.out.println(bingoCardMatrix[k][l]);
+
+//
+//        if(button.isPressed()) {
+//            if (bingoCardMatrix[k][l]) {
+//                bingoCardMatrix[k][l] = false;
+//
+//            } else {
+//                bingoCardMatrix[k][l] = true;
+//                button.setPressed(false);
+//            }
+
+
+//        }
+
+
+
     }
     //TODO: fix this and confirm functionality
     public static void checkRowWin(int k, int l) {
