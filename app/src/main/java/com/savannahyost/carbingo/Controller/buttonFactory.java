@@ -20,40 +20,22 @@ public class buttonFactory {
 
         if(button.isPressed() && button.isSelected()) {
             button.setBackgroundResource(R.drawable.button_not_pressed);
+//            bingoCardMatrix[k][l] = false;
+//            System.out.println(bingoCardMatrix[k][l]);
             button.setSelected(false);
         }else if(button.isPressed()) {
             button.setBackgroundResource(R.drawable.button_pressed);
             button.setSelected(true);
+//            bingoCardMatrix[k][l] = true;
+//            System.out.println(bingoCardMatrix[k][l]);
         }
     }
 
 
-    //TODO: fix selection and deselection of the matrix
+    //Updates game matrix to true or false if the button is selected
     public static void updateGameMatrix(Button button, int k, int l) {
-        if (button.isPressed() && !bingoCardMatrix[k][l]){
-            bingoCardMatrix[k][l] = true;
-            System.out.println(bingoCardMatrix[k][l]);
-        } else if (button.isPressed() && bingoCardMatrix[k][l]) {
-            bingoCardMatrix[k][l] = false;
-            System.out.println(bingoCardMatrix[k][l]);
-        }
+        bingoCardMatrix[k][l] = button.isSelected();
 //        System.out.println(bingoCardMatrix[k][l]);
-
-//
-//        if(button.isPressed()) {
-//            if (bingoCardMatrix[k][l]) {
-//                bingoCardMatrix[k][l] = false;
-//
-//            } else {
-//                bingoCardMatrix[k][l] = true;
-//                button.setPressed(false);
-//            }
-
-
-//        }
-
-
-
     }
     //TODO: fix this and confirm functionality
     public static void checkRowWin(int k, int l) {
