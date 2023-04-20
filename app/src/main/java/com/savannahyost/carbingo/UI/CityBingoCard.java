@@ -67,7 +67,7 @@ public class CityBingoCard extends AppCompatActivity {
                     buttonFactory.handleColorChange(buttonRows[k][l]);
                     buttonFactory.updateGameMatrix(buttonRows[k][l], k, l);
 //                    buttonFactory.checkRowWin(k,l);
-//                    buttonFactory.checkColumnWin(l,k);
+                    buttonFactory.checkColumnWin(buttonRows[k][l], l,k);
 //                    buttonFactory.checkDiagonalWin(k,l);
                 }
             }
