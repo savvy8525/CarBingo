@@ -45,15 +45,18 @@ public class CityBingoCard extends AppCompatActivity {
         for (int i = 0; i < buttonRows.length; i++) {
             for (int j = 0; j < buttonRows.length; j++) {
                 buttonRows[i][j].setOnClickListener(new View.OnClickListener() {
+
                     @Override
                     public void onClick(View v) {
                         onClickView(v);
+
                     }
                 });
 
-
             }
         }
+
+
 
 
     }
@@ -66,13 +69,13 @@ public class CityBingoCard extends AppCompatActivity {
                     //Changes button color state and sets a boolean matrix to make "bingo" pop up when there are 5 in a row
                     buttonFactory.handleColorChange(buttonRows[k][l]);
                     buttonFactory.updateGameMatrix(buttonRows[k][l], k, l);
-//                    buttonFactory.checkRowWin(k,l);
-                    buttonFactory.checkColumnWin(buttonRows[k][l], l,k);
-//                    buttonFactory.checkDiagonalWin(k,l);
+                    buttonFactory.checkRowWin(k,l);
                 }
             }
 
-        }
+        buttonFactory.checkColumnWin();
+        buttonFactory.checkDiagonalWin();
+    }
 
 
 //

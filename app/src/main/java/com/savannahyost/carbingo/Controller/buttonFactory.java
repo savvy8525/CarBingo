@@ -4,10 +4,14 @@ import android.widget.Button;
 
 import com.savannahyost.carbingo.R;
 
+import java.util.Arrays;
+
 public class buttonFactory {
     private static boolean[][] bingoCardMatrix = new boolean[5][5];
     private static int canBingoRow = 0;
     private static int canBingoColumn = 0;
+    private static int canBingoDiagonal = 0;
+    private static int diagonalCount = 0;
 
 //    private static Button[][] buttonRows = new Button[5][5];
 
@@ -32,12 +36,16 @@ public class buttonFactory {
     //Updates game matrix to true or false if the button is selected
     public static void updateGameMatrix(Button button, int k, int l) {
         bingoCardMatrix[k][l] = button.isSelected();
+//        bingoCardMatrix[l][k] = button.isSelected();
+
     }
+
 
     //sets a row to bingo when there are five in a row
     public static void checkRowWin(int k, int l) {
         //Row Bingo - works
         if(bingoCardMatrix[k][l]) {
+//            System.out.println(" k: " + k + "l: " + l );
             canBingoRow++;
         }else {
             canBingoRow = 0;
@@ -50,45 +58,44 @@ public class buttonFactory {
 
     }
 
-    //TODO: fix the column bingo, it keeps doubling the zero on the first two clicks
-    public static void checkColumnWin(Button button, int l, int k) {
-        //add for loop
+    //sets a column to bingo when there are five selected in a column
+    public static void checkColumnWin() {
 
-
-//        for (int i = 0; i < l; i++) {
-//            for (int j = 0; j < bingoCardMatrix.length; j++) {
-//                if(bingoCardMatrix[j][i]){
-//                    canBingoColumn++;
-//                    System.out.println(canBingoColumn);
-////                    System.out.println(bingoCardMatrix);
-//                } else {
-//                    canBingoColumn = 0;
-//                }
-//            }
-//            if (canBingoColumn == 5) {
-//                System.out.println("bingo");
-//                canBingoColumn = 0;
-//            }
-//        }
-
-        //Column bingo - doesn't work well and needs fixed
-        if(bingoCardMatrix[l][k]) {
-
-            System.out.println(button.getId());
-            canBingoColumn++;
-            System.out.println(canBingoColumn);
-            System.out.println("l: " + l + " k: " + k);
-        }else {
-            canBingoColumn = 0;
-        }
-        if(canBingoColumn == 5) {
-            System.out.println("bingo");
-            canBingoColumn = 0;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if(bingoCardMatrix[j][i]) {
+                    canBingoColumn++;
+                    System.out.println(canBingoColumn);
+                }else {
+                    canBingoColumn = 0;
+                }
+                if(canBingoColumn == 5) {
+                    System.out.println("bingo");
+                    canBingoColumn = 0;
+                }
+            }
+            
         }
 
     }
-    //TODO: add in the diagonal bingo
-    public static void checkDiagonalWin(int k, int l) {
+    //sets a diagonal to bingo when there are five selected from corner to corner
+    //TODO: fix the right to left diagonal bingo. left to right works
+    public static void checkDiagonalWin() {
+
+
+        for (int i = 0; i < 5; i++) {
+            if(bingoCardMatrix[i][i]){
+
+                canBingoDiagonal++;
+//                System.out.println(canBingoDiagonal);
+            }else {
+                canBingoDiagonal = 0;
+            }
+            if(canBingoDiagonal == 5) {
+                System.out.println("bingo");
+                canBingoDiagonal = 0;
+            }
+        }
 
     }
 }
