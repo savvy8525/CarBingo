@@ -10,16 +10,9 @@ public class buttonFactory {
     private static boolean[][] bingoCardMatrix = new boolean[5][5];
     private static int canBingoRow = 0;
     private static int canBingoColumn = 0;
-    private static int canBingoDiagonal = 0;
-    private static int diagonalCount = 0;
+    private static int canBingoDiagonalRight = 0;
+    private static int canBingoDiagonalLeft = 0;
 
-//    private static Button[][] buttonRows = new Button[5][5];
-
-
-//    public static void makeBingoCard(int id, int i, int j) {
-//        buttonRows[i][j] = findViewById(id);
-//
-//    }
 
     //Changes the button color between transparent and orange depending on selection state
     public static void handleColorChange(Button button) {
@@ -40,7 +33,6 @@ public class buttonFactory {
 
     }
 
-
     //sets a row to bingo when there are five in a row
     public static void checkRowWin(int k, int l) {
         //Row Bingo - works
@@ -55,7 +47,6 @@ public class buttonFactory {
             System.out.println("bingo");
             canBingoRow = 0;
         }
-
     }
 
     //sets a column to bingo when there are five selected in a column
@@ -65,7 +56,7 @@ public class buttonFactory {
             for (int j = 0; j < 5; j++) {
                 if(bingoCardMatrix[j][i]) {
                     canBingoColumn++;
-                    System.out.println(canBingoColumn);
+//                    System.out.println(canBingoColumn);
                 }else {
                     canBingoColumn = 0;
                 }
@@ -79,22 +70,40 @@ public class buttonFactory {
 
     }
     //sets a diagonal to bingo when there are five selected from corner to corner
-    //TODO: fix the right to left diagonal bingo. left to right works
     public static void checkDiagonalWin() {
-
 
         for (int i = 0; i < 5; i++) {
             if(bingoCardMatrix[i][i]){
 
-                canBingoDiagonal++;
-//                System.out.println(canBingoDiagonal);
+                canBingoDiagonalRight++;
+//                System.out.println(canBingoDiagonalRight);
             }else {
-                canBingoDiagonal = 0;
+                canBingoDiagonalRight = 0;
             }
-            if(canBingoDiagonal == 5) {
+            if(canBingoDiagonalRight == 5) {
                 System.out.println("bingo");
-                canBingoDiagonal = 0;
+                canBingoDiagonalRight = 0;
             }
+        }
+
+        int count = 0;
+        for (int i = 4; i >= 0; i--) {
+//            System.out.println(i);
+//            System.out.println(count);
+//            count++;
+
+            if(bingoCardMatrix[count][i]){
+
+                canBingoDiagonalLeft++;
+                System.out.println(canBingoDiagonalLeft);
+            }else {
+                canBingoDiagonalLeft = 0;
+            }
+            if(canBingoDiagonalLeft == 5) {
+                System.out.println("bingo");
+                canBingoDiagonalLeft = 0;
+            }
+            count++;
         }
 
     }

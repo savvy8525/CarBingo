@@ -77,30 +77,4 @@ public class CityBingoCard extends AppCompatActivity {
         buttonFactory.checkDiagonalWin();
     }
 
-
-//
-//    private void updateGameMatrix(Button button, int k, int l) {
-//        if(button.isPressed()) {
-//            if(bingoCardMatrix[k][l]) {
-//                bingoCardMatrix[k][l] = false;
-//            } else {
-//                bingoCardMatrix[k][l] = true;
-//            }
-//
-//        }
-//    }
-//
-//    private void checkRowWin() {
-//
-//    }
-//    private void checkColumnWin() {
-//
-//    }
-//
-//    private void checkDiagonalWin() {
-//
-//    }
-
-
-
 }
