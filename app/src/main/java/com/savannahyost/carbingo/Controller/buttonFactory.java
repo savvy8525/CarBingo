@@ -88,14 +88,11 @@ public class buttonFactory {
 
         int count = 0;
         for (int i = 4; i >= 0; i--) {
-//            System.out.println(i);
-//            System.out.println(count);
-//            count++;
 
             if(bingoCardMatrix[count][i]){
 
                 canBingoDiagonalLeft++;
-                System.out.println(canBingoDiagonalLeft);
+//                System.out.println(canBingoDiagonalLeft);
             }else {
                 canBingoDiagonalLeft = 0;
             }
