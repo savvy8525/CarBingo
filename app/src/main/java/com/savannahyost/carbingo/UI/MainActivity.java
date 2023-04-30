@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button city = findViewById(R.id.cityCard);
+        Button licensePlate = findViewById(R.id.licensePlateCard);
 
         city.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        licensePlate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LicensePlatesBingoCard.class);
+
+            }
+        });
+
 
     }
 
