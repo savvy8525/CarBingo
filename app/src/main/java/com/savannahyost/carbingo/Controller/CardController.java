@@ -1,8 +1,5 @@
 package com.savannahyost.carbingo.Controller;
 
-import com.savannahyost.carbingo.Model.CityCard;
-import com.savannahyost.carbingo.R;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
