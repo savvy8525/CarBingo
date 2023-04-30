@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         city.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CityBingoCard.class);
+                Intent intent = new Intent(MainActivity.this, CityBingoGame.class);
                 startActivity(intent);
             }
         });
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         licensePlate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LicensePlatesBingoCard.class);
-
+                Intent intent = new Intent(MainActivity.this, LicensePlatesBingoGame.class);
+                startActivity(intent);
             }
         });
 

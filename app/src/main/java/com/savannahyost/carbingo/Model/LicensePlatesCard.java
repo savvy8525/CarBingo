@@ -1,10 +1,10 @@
 package com.savannahyost.carbingo.Model;
 
-public class LicensePlates {
+public class LicensePlatesCard {
 
     public String[] licensePlates;
 
-    public LicensePlates() {
+    public LicensePlatesCard() {
 
         this.licensePlates = new String[] {"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
                 "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii",

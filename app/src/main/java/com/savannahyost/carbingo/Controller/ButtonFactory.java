@@ -4,14 +4,13 @@ import android.widget.Button;
 
 import com.savannahyost.carbingo.R;
 
-import java.util.Arrays;
-
-public class buttonFactory {
+public class ButtonFactory {
     private static boolean[][] bingoCardMatrix = new boolean[5][5];
     private static int canBingoRow = 0;
     private static int canBingoColumn = 0;
     private static int canBingoDiagonalRight = 0;
     private static int canBingoDiagonalLeft = 0;
+
 
 
     //Changes the button color between transparent and orange depending on selection state
@@ -34,7 +33,7 @@ public class buttonFactory {
     }
 
     //sets a row to bingo when there are five in a row
-    public static void checkRowWin(int k, int l) {
+    public static boolean checkRowWin(int k, int l) {
         //Row Bingo - works
         if(bingoCardMatrix[k][l]) {
 //            System.out.println(" k: " + k + "l: " + l );
@@ -46,11 +45,13 @@ public class buttonFactory {
         if(canBingoRow == 5) {
             System.out.println("bingo");
             canBingoRow = 0;
+            return true;
         }
+        return false;
     }
 
     //sets a column to bingo when there are five selected in a column
-    public static void checkColumnWin() {
+    public static boolean checkColumnWin() {
 
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -61,16 +62,19 @@ public class buttonFactory {
                     canBingoColumn = 0;
                 }
                 if(canBingoColumn == 5) {
-                    System.out.println("bingo");
+                    System.out.println("column bingo");
                     canBingoColumn = 0;
+                    return true;
                 }
             }
             
         }
 
+        return false;
+
     }
     //sets a diagonal to bingo when there are five selected from corner to corner
-    public static void checkDiagonalWin() {
+    public static boolean checkDiagonalWin() {
 
         for (int i = 0; i < 5; i++) {
             if(bingoCardMatrix[i][i]){
@@ -83,6 +87,7 @@ public class buttonFactory {
             if(canBingoDiagonalRight == 5) {
                 System.out.println("bingo");
                 canBingoDiagonalRight = 0;
+                return true;
             }
         }
 
@@ -99,9 +104,12 @@ public class buttonFactory {
             if(canBingoDiagonalLeft == 5) {
                 System.out.println("bingo");
                 canBingoDiagonalLeft = 0;
+                return true;
             }
             count++;
         }
+
+        return false;
 
     }
 }

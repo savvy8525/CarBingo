@@ -12,13 +12,13 @@
         android:theme="@style/Theme.CarBingo"
         tools:targetApi="31">
         <activity
-            android:name=".UI.LicensePlatesBingoCard"
+            android:name=".UI.LicensePlatesBingoGame"
             android:exported="false"
             android:label="License Plates Bingo Card"
             android:parentActivityName=".UI.MainActivity">
         </activity>
         <activity
-            android:name=".UI.CityBingoCard"
+            android:name=".UI.CityBingoGame"
             android:exported="false"
             android:label="City Bingo Card"
             android:parentActivityName=".UI.MainActivity"

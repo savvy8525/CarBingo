@@ -6,30 +6,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.savannahyost.carbingo.Controller.CardController;
 import com.savannahyost.carbingo.Model.CityCard;
 import com.savannahyost.carbingo.R;
-import com.savannahyost.carbingo.Controller.buttonFactory;
+import com.savannahyost.carbingo.Controller.ButtonFactory;
 
 
-public class CityBingoCard extends AppCompatActivity {
-    private int testColumn = 0;
-//    private boolean[][] bingoCardMatrix = new boolean[5][5];
+public class CityBingoGame extends AppCompatActivity {
     private Button[][] buttonRows = new Button[5][5];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_city_bingo_card);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        setContentView(R.layout.activity_city_bingo_game);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        int[] buttonId = {R.id.button1_1, R.id.button1_2, R.id.button1_3, R.id.button1_4, R.id.button1_5,
-                R.id.button2_1, R.id.button2_2, R.id.button2_3, R.id.button2_4, R.id.button2_5,
-                R.id.button3_1, R.id.button3_2, R.id.button3_3, R.id.button3_4, R.id.button3_5,
-                R.id.button4_1, R.id.button4_2, R.id.button4_3, R.id.button4_4, R.id.button4_5,
-                R.id.button5_1, R.id.button5_2, R.id.button5_3, R.id.button5_4, R.id.button5_5};
+        int[] buttonId = {R.id.city_button1_1, R.id.city_button1_2, R.id.city_button1_3, R.id.city_button1_4, R.id.city_button1_5,
+                R.id.city_button2_1, R.id.city_button2_2, R.id.city_button2_3, R.id.city_button2_4, R.id.city_button2_5,
+                R.id.city_button3_1, R.id.city_button3_2, R.id.city_button3_3, R.id.city_button3_4, R.id.city_button3_5,
+                R.id.city_button4_1, R.id.city_button4_2, R.id.city_button4_3, R.id.city_button4_4, R.id.city_button4_5,
+                R.id.city_button5_1, R.id.city_button5_2, R.id.city_button5_3, R.id.city_button5_4, R.id.city_button5_5};
         int buttonNum = 0;
         CardController cardController = new CardController();
         CityCard cityCard = new CityCard();
@@ -69,14 +67,22 @@ public class CityBingoCard extends AppCompatActivity {
             for (int k = 0; k < buttonRows.length; k++) {
                 for (int l = 0; l < buttonRows.length; l++) {
                     //Changes button color state and sets a boolean matrix to make "bingo" pop up when there are 5 in a row
-                    buttonFactory.handleColorChange(buttonRows[k][l]);
-                    buttonFactory.updateGameMatrix(buttonRows[k][l], k, l);
-                    buttonFactory.checkRowWin(k,l);
+                    ButtonFactory.handleColorChange(buttonRows[k][l]);
+                    ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
+                    if(ButtonFactory.checkRowWin(k,l)) {
+                        Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
 
-        buttonFactory.checkColumnWin();
-        buttonFactory.checkDiagonalWin();
+        if(ButtonFactory.checkColumnWin()) {
+            Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+        }
+        if(ButtonFactory.checkDiagonalWin()) {
+            Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+        }
+
+
     }
 
 }

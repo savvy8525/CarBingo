@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.CityBingoCard">
+    tools:context=".UI.CityBingoGame">
 
 
     <TextView
@@ -36,7 +36,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button1_1"
+                android:id="@+id/city_button1_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -45,7 +45,7 @@
                 android:text="Button"/>
 
             <Button
-                android:id="@+id/button1_2"
+                android:id="@+id/city_button1_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
@@ -54,7 +54,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button1_3"
+                android:id="@+id/city_button1_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
@@ -63,7 +63,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button1_4"
+                android:id="@+id/city_button1_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
@@ -71,7 +71,7 @@
                 android:textColor="@color/black"
                 android:text="Button" />
             <Button
-                android:id="@+id/button1_5"
+                android:id="@+id/city_button1_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:textSize="11sp"
@@ -86,7 +86,7 @@
             android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/button2_1"
+                android:id="@+id/city_button2_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -95,7 +95,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button2_2"
+                android:id="@+id/city_button2_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -104,7 +104,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button2_3"
+                android:id="@+id/city_button2_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -113,7 +113,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button2_4"
+                android:id="@+id/city_button2_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -121,7 +121,7 @@
                 android:textSize="11sp"
                 android:text="Button" />
             <Button
-                android:id="@+id/button2_5"
+                android:id="@+id/city_button2_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -136,7 +136,7 @@
             android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/button3_1"
+                android:id="@+id/city_button3_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -145,7 +145,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button3_2"
+                android:id="@+id/city_button3_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -154,7 +154,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button3_3"
+                android:id="@+id/city_button3_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -163,7 +163,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button3_4"
+                android:id="@+id/city_button3_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -171,7 +171,7 @@
                 android:textSize="11sp"
                 android:text="Button" />
             <Button
-                android:id="@+id/button3_5"
+                android:id="@+id/city_button3_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -186,7 +186,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button4_1"
+                android:id="@+id/city_button4_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -195,7 +195,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button4_2"
+                android:id="@+id/city_button4_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -204,7 +204,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button4_3"
+                android:id="@+id/city_button4_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -213,7 +213,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button4_4"
+                android:id="@+id/city_button4_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -221,7 +221,7 @@
                 android:textSize="11sp"
                 android:text="Button" />
             <Button
-                android:id="@+id/button4_5"
+                android:id="@+id/city_button4_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -235,7 +235,7 @@
             android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/button5_1"
+                android:id="@+id/city_button5_1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -244,7 +244,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button5_2"
+                android:id="@+id/city_button5_2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -253,7 +253,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button5_3"
+                android:id="@+id/city_button5_3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -262,7 +262,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button5_4"
+                android:id="@+id/city_button5_4"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
@@ -270,7 +270,7 @@
                 android:textSize="11sp"
                 android:text="Button" />
             <Button
-                android:id="@+id/button5_5"
+                android:id="@+id/city_button5_5"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/button_not_pressed"
