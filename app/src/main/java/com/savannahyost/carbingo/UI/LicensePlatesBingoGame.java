@@ -1,5 +1,6 @@
 package com.savannahyost.carbingo.UI;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import com.savannahyost.carbingo.R;
 
 public class LicensePlatesBingoGame extends AppCompatActivity {
     private Button[][] buttonRows = new Button[5][5];
+//    private BingoDialog bingoDialog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +57,9 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
         }
     }
 
+    //TODO: work on dialog in this class
     private void onClickView(View v) {
+        BingoDialog bingoDialog = new BingoDialog();
 
         for (int k = 0; k < buttonRows.length; k++) {
             for (int l = 0; l < buttonRows.length; l++) {
@@ -64,6 +68,8 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
                 ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
                 if(ButtonFactory.checkRowWin(k,l)) {
                     Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+//                    bingoDialog.onCreateDialog()
+
                 }
             }
         }
@@ -75,6 +81,16 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
             Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
         }
     }
+
+//    private void onCreateDialog(Bundle savedIn)
+
+
+//    private void onBingo() {
+//        AlertDialog.Builder bingo = new AlertDialog.Builder(this);
+//        bingo.setMessage("Congrats! You got a bingo!");
+//        bingo.setTitle("Bingo!");
+//        bingo.setPositiveButton("Replay")
+//    }
 
 
 }

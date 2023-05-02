@@ -61,7 +61,6 @@ public class CityBingoGame extends AppCompatActivity {
 
     }
 
-    //TODO: make this work
     private void onClickView(View v) {
 
             for (int k = 0; k < buttonRows.length; k++) {
