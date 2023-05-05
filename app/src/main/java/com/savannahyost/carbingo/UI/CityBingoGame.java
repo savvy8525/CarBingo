@@ -69,16 +69,16 @@ public class CityBingoGame extends AppCompatActivity {
                     ButtonFactory.handleColorChange(buttonRows[k][l]);
                     ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
                     if(ButtonFactory.checkRowWin(k,l)) {
-                        Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+                        BingoDialog.onBingo(this);
                     }
                 }
             }
 
         if(ButtonFactory.checkColumnWin()) {
-            Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+            BingoDialog.onBingo(this);
         }
         if(ButtonFactory.checkDiagonalWin()) {
-            Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
+            BingoDialog.onBingo(this);
         }
 
 
