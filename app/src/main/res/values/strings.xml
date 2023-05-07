@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CarBingo</string>
+    <string name="car_bingo">Car Bingo!</string>
+    <string name="object_card">Objects Card</string>
+    <string name="license_plate_card">License Plate Card</string>
 </resources>

@@ -13,7 +13,6 @@ import com.savannahyost.carbingo.Model.CityCard;
 import com.savannahyost.carbingo.R;
 import com.savannahyost.carbingo.Controller.ButtonFactory;
 
-
 public class CityBingoGame extends AppCompatActivity {
     private Button[][] buttonRows = new Button[5][5];
     @Override
@@ -33,7 +32,6 @@ public class CityBingoGame extends AppCompatActivity {
         CityCard cityCard = new CityCard();
         String[][] randomizeCard = cardController.randomCard(cityCard.getCityCard());
 
-
         for (int i = 0; i < buttonRows.length; i++) {
             for (int j = 0; j < buttonRows.length; j++) {
                 buttonRows[i][j] = findViewById(buttonId[buttonNum]);
@@ -49,22 +47,16 @@ public class CityBingoGame extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         onClickView(v);
-
                     }
                 });
-
             }
         }
-
-
-
-
     }
-
     private void onClickView(View v) {
-
+        //TODO: add a class for the double for loop
             for (int k = 0; k < buttonRows.length; k++) {
                 for (int l = 0; l < buttonRows.length; l++) {
+
                     //Changes button color state and sets a boolean matrix to make "bingo" pop up when there are 5 in a row
                     ButtonFactory.handleColorChange(buttonRows[k][l]);
                     ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
@@ -80,8 +72,5 @@ public class CityBingoGame extends AppCompatActivity {
         if(ButtonFactory.checkDiagonalWin()) {
             BingoDialog.onBingo(this);
         }
-
-
     }
-
 }

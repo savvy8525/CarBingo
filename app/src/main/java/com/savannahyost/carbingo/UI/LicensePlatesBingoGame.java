@@ -23,7 +23,6 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
         setContentView(R.layout.activity_license_plates_bingo_game);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
         int[] buttonId = {R.id.plate_button1_1, R.id.plate_button1_2, R.id.plate_button1_3, R.id.plate_button1_4, R.id.plate_button1_5,
                 R.id.plate_button2_1, R.id.plate_button2_2, R.id.plate_button2_3, R.id.plate_button2_4, R.id.plate_button2_5,
                 R.id.plate_button3_1, R.id.plate_button3_2, R.id.plate_button3_3, R.id.plate_button3_4, R.id.plate_button3_5,
@@ -50,15 +49,12 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         onClickView(v, savedInstanceState);
-
                     }
                 });
-
             }
         }
     }
 
-    //TODO: work on dialog in this class
     private void onClickView(View v, Bundle instance) {
 
         for (int k = 0; k < buttonRows.length; k++) {
@@ -67,9 +63,7 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
                 ButtonFactory.handleColorChange(buttonRows[k][l]);
                 ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
                 if(ButtonFactory.checkRowWin(k,l)) {
-                    Toast.makeText(this, "Bingo!!", Toast.LENGTH_LONG).show();
                     BingoDialog.onBingo(this);
-
                 }
             }
         }
@@ -80,5 +74,4 @@ public class LicensePlatesBingoGame extends AppCompatActivity {
             BingoDialog.onBingo(this);
         }
     }
-
 }

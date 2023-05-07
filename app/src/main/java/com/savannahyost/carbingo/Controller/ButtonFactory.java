@@ -74,6 +74,7 @@ public class ButtonFactory {
 
     }
     //sets a diagonal to bingo when there are five selected from corner to corner
+    //Try switching false/true
     public static boolean checkDiagonalWin() {
 
         for (int i = 0; i < 5; i++) {
