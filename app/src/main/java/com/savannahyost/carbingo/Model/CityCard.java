@@ -9,7 +9,8 @@ public class CityCard {
                 "Fast Food", "Book Store", "Coffee Shop", "Bar", "Library",
                 "Stop Sign", "Bridge", "Mall", "Boat", "Bus",
                 "Bus Stop", "Park", "Theater", "Police Car", "Fire Truck",
-                "Ambulance", "Motorcycle", "Gym", "Airplane", "Taxi"};
+                "Ambulance", "Motorcycle", "Gym", "Airplane", "Taxi",
+                "Barn", "ATV", "River"};
     }
 
     public String[] getCityCard() {

@@ -6,19 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".UI.MainActivity">
 
-    <TextView
+
+
+    <LinearLayout
         android:id="@+id/carBingoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/car_bingo"
-        android:textColor="@color/black"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="128dp">
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/exclamation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/cityCard"
@@ -40,4 +132,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cityCard"
         tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/carBingoTextTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Bingo!"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/licensePlateCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

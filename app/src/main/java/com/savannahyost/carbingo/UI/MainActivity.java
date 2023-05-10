@@ -12,19 +12,29 @@ import android.widget.TextView;
 import com.savannahyost.carbingo.R;
 
 public class MainActivity extends AppCompatActivity {
+    private UIAnimations uiAnimations = new UIAnimations();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView carBingo = findViewById(R.id.carBingoText);
+        int[] carBingoTextID = {R.id.c, R.id.a, R.id.r, R.id.space, R.id.b, R.id.i, R.id.n, R.id.g, R.id.o, R.id.exclamation};
 
-        AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
+        TextView[] carBingoChar = new TextView[10];
+        for (int i = 0; i < carBingoChar.length; i++) {
+            carBingoChar[i] = findViewById(carBingoTextID[i]);
+        }
+        uiAnimations.gradientFadeIn(carBingoChar);
 
-        carBingo.startAnimation(fadeIn);
-        fadeIn.setDuration(3000);
-        fadeIn.setFillAfter(true);
-        fadeIn.setStartOffset(4000+fadeIn.getStartOffset());
+//        AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
+
+//        carBingo.startAnimation(fadeIn);
+//        fadeIn.setDuration(3000);
+//        fadeIn.setFillAfter(true);
+//        fadeIn.setStartOffset(4000+fadeIn.getStartOffset());
+
+        TextView testCarBingo = findViewById(R.id.carBingoTextTest);
+
 
         Button city = findViewById(R.id.cityCard);
         Button licensePlate = findViewById(R.id.licensePlateCard);
