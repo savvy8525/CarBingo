@@ -30,6 +30,7 @@ public class UIAnimations {
         while(i < charText.length) {
         charText[i].startAnimation(fadeIn);
 //        fadeIn.setStartOffset(8000);
+
         fadeIn.setDuration(3000);
         fadeIn.setFillAfter(true);
 

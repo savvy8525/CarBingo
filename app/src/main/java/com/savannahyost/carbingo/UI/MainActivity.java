@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 //        carBingo.startAnimation(fadeIn);
 //        fadeIn.setDuration(3000);
 //        fadeIn.setFillAfter(true);
+
 //        fadeIn.setStartOffset(4000+fadeIn.getStartOffset());
 
         TextView testCarBingo = findViewById(R.id.carBingoTextTest);
