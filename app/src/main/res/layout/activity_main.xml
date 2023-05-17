@@ -133,16 +133,4 @@
         app:layout_constraintTop_toBottomOf="@+id/cityCard"
         tools:layout_editor_absoluteY="440dp" />
 
-    <TextView
-        android:id="@+id/carBingoTextTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Car Bingo!"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/black"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/licensePlateCard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

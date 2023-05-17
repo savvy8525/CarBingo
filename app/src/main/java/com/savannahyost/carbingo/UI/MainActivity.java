@@ -26,15 +26,7 @@ public class MainActivity extends AppCompatActivity {
         }
         uiAnimations.gradientFadeIn(carBingoChar);
 
-//        AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
 
-//        carBingo.startAnimation(fadeIn);
-//        fadeIn.setDuration(3000);
-//        fadeIn.setFillAfter(true);
-
-//        fadeIn.setStartOffset(4000+fadeIn.getStartOffset());
-
-        TextView testCarBingo = findViewById(R.id.carBingoTextTest);
 
 
         Button city = findViewById(R.id.cityCard);
