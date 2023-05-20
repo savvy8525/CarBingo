@@ -11,32 +11,27 @@ import java.util.logging.LogRecord;
 import java.util.logging.StreamHandler;
 
 public class UIAnimations {
-//    Handler handler1 = new StreamHandler();
-
-//    private TextView textView = null;
-//    private AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
-
 
     //TODO: try to find a better way to do the gradient
     public void gradientFadeIn(TextView[] charText) {
-        AlphaAnimation fadeInStyle = new AlphaAnimation(0.0f, 1.0f);
-        AlphaAnimation[] fadeIn = new AlphaAnimation[10];
-
-        Arrays.fill(fadeIn, fadeInStyle);
-        int offset= 0;
-
-        for (int i = 0; i < 10; i++) {
-
-            System.out.println(fadeIn[i]);
-//            charText[i].startAnimation(fadeIn[i]);
-//            fadeIn[i].setStartOffset(offset);
-//            fadeIn[i].setDuration(3000);
-//            fadeIn[i].setFillAfter(true);
+//        AlphaAnimation fadeInStyle = new AlphaAnimation(0.0f, 1.0f);
+//        AlphaAnimation[] fadeIn = new AlphaAnimation[10];
 //
-//            offset += 1000;
-
-
-        }
+//        Arrays.fill(fadeIn, fadeInStyle);
+//        int offset= 0;
+//
+//        for (int i = 0; i < 10; i++) {
+//
+//            System.out.println(fadeIn[i]);
+////            charText[i].startAnimation(fadeIn[i]);
+////            fadeIn[i].setStartOffset(offset);
+////            fadeIn[i].setDuration(3000);
+////            fadeIn[i].setFillAfter(true);
+////
+////            offset += 1000;
+//
+//
+//        }
 
         AlphaAnimation fadeInC = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInA = new AlphaAnimation(0.0f, 1.0f);
@@ -50,7 +45,7 @@ public class UIAnimations {
         AlphaAnimation fadeInExclamation = new AlphaAnimation(0.0f, 1.0f);
 
         charText[0].startAnimation(fadeInC);
-        fadeInC.setDuration(3000);
+        fadeInC.setDuration(2000);
 
         charText[1].startAnimation(fadeInA);
         fadeInA.setStartOffset(250);
@@ -84,45 +79,6 @@ public class UIAnimations {
         fadeInExclamation.setStartOffset(2000);
         fadeInExclamation.setDuration(2000);
 
-//        int i = 0;
-
-//        charText[0].startAnimation(fadeIn1);
-//        fadeIn1.setDuration(3000);
-//
-//        charText[1].startAnimation(fadeIn2);
-//        fadeIn2.setStartOffset(2000);
-//        fadeIn2.setDuration(3000);
-//
-//        charText[3].startAnimation(fadeIn2);
-//        fadeIn2.setStartOffset(2000);
-//        fadeIn2.setDuration(3000);
-
-//        charText[i].startAnimation(fadeIn);
-//        fadeIn.setDuration(3000);
-//        fadeIn.setFillAfter(true);
-//        fadeIn.setStartOffset(2000);
-//        fadeIn.setFillAfter(true);
-//
-//        int time = 3000;
-//        while(i < charText.length) {
-//            charText[i].startAnimation(fadeIn);
-//    //        fadeIn.setStartOffset(8000);
-//
-//            fadeIn.setDuration(time);
-//    //        fadeIn.setFillAfter(true);
-//
-//            time+=1000;
-
-
-
-//            charText[i].startAnimation(fadeIn);
-//            fadeIn.setDuration(3000);
-//            fadeIn.setFillAfter(true);
-//            fadeIn.setStartOffset(4000+fadeIn.getStartOffset());
-
-//            i++;
-
-//        }
 
     }
 

@@ -62,7 +62,6 @@ public class ButtonFactory {
                     canBingoColumn = 0;
                 }
                 if(canBingoColumn == 5) {
-                    System.out.println("column bingo");
                     canBingoColumn = 0;
                     return true;
                 }
