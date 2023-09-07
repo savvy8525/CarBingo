@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".UI.MainActivity">
 
-
-
     <LinearLayout
         android:id="@+id/carBingoText"
         android:layout_width="wrap_content"

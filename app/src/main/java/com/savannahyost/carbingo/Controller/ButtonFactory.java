@@ -80,12 +80,10 @@ public class ButtonFactory {
             if(bingoCardMatrix[i][i]){
 
                 canBingoDiagonalRight++;
-//                System.out.println(canBingoDiagonalRight);
             }else {
                 canBingoDiagonalRight = 0;
             }
             if(canBingoDiagonalRight == 5) {
-                System.out.println("bingo");
                 canBingoDiagonalRight = 0;
                 return true;
             }
@@ -95,14 +93,11 @@ public class ButtonFactory {
         for (int i = 4; i >= 0; i--) {
 
             if(bingoCardMatrix[count][i]){
-
                 canBingoDiagonalLeft++;
-//                System.out.println(canBingoDiagonalLeft);
             }else {
                 canBingoDiagonalLeft = 0;
             }
             if(canBingoDiagonalLeft == 5) {
-                System.out.println("bingo");
                 canBingoDiagonalLeft = 0;
                 return true;
             }

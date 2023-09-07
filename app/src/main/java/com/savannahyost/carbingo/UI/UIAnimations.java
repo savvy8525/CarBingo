@@ -14,29 +14,9 @@ public class UIAnimations {
 
     //TODO: try to find a better way to do the gradient
     public void gradientFadeIn(TextView[] charText) {
-//        AlphaAnimation fadeInStyle = new AlphaAnimation(0.0f, 1.0f);
-//        AlphaAnimation[] fadeIn = new AlphaAnimation[10];
-//
-//        Arrays.fill(fadeIn, fadeInStyle);
-//        int offset= 0;
-//
-//        for (int i = 0; i < 10; i++) {
-//
-//            System.out.println(fadeIn[i]);
-////            charText[i].startAnimation(fadeIn[i]);
-////            fadeIn[i].setStartOffset(offset);
-////            fadeIn[i].setDuration(3000);
-////            fadeIn[i].setFillAfter(true);
-////
-////            offset += 1000;
-//
-//
-//        }
-
         AlphaAnimation fadeInC = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInA = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInR = new AlphaAnimation(0.0f, 1.0f);
-//        AlphaAnimation fadeInSpace = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInB = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInI = new AlphaAnimation(0.0f, 1.0f);
         AlphaAnimation fadeInN = new AlphaAnimation(0.0f, 1.0f);
