@@ -56,21 +56,25 @@ public class CityBingoGame extends AppCompatActivity {
         //TODO: add a class for the double for loop
             for (int k = 0; k < buttonRows.length; k++) {
                 for (int l = 0; l < buttonRows.length; l++) {
-
                     //Changes button color state and sets a boolean matrix to make "bingo" pop up when there are 5 in a row
                     ButtonFactory.handleColorChange(buttonRows[k][l]);
                     ButtonFactory.updateGameMatrix(buttonRows[k][l], k, l);
-                    if(ButtonFactory.checkRowWin(k,l)) {
-                        BingoDialog.onBingo(this);
-                    }
+
                 }
             }
 
-        if(ButtonFactory.checkColumnWin()) {
+        if(ButtonFactory.checkRowWin()) {
             BingoDialog.onBingo(this);
+            System.out.println("row win");
+        }
+
+        if(ButtonFactory.checkColumnWin()){
+            BingoDialog.onBingo(this);
+            System.out.println("column win");
         }
         if(ButtonFactory.checkDiagonalWin()) {
             BingoDialog.onBingo(this);
+            System.out.println("diagonal win");
         }
     }
 }

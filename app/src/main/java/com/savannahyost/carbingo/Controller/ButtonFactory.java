@@ -33,23 +33,22 @@ public class ButtonFactory {
     }
 
     //sets a row to bingo when there are five in a row
-    //this section has issues with counting the row logic, it will take one from the top and bottom and count as a row.
-    //comment out column and diagonal to see failure for just this
-    public static boolean checkRowWin(int k, int l) {
-        //Row Bingo - works
-        if(bingoCardMatrix[1][l]) {
-//            System.out.println(" k: " + k + "l: " + l );
-            canBingoRow++;
-            System.out.println(canBingoRow);
-        }else {
+    public static boolean checkRowWin() {
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if(bingoCardMatrix[i][j]) {
+                    canBingoRow++;
+//                    System.out.println(canBingoRow);
+                }
+                if(canBingoRow == 5) {
+                    canBingoRow = 0;
+                    return true;
+                }
+            }
             canBingoRow = 0;
         }
 
-        if(canBingoRow == 5) {
-            System.out.println("bingo");
-            canBingoRow = 0;
-            return true;
-        }
         return false;
     }
 
@@ -74,10 +73,9 @@ public class ButtonFactory {
         return false;
 
     }
+
     //sets a diagonal to bingo when there are five selected from corner to corner
     //Try switching false/true
-    //fails by selecting the other diagonal start
-    //comment out column and row to see failure for just this
     public static boolean checkDiagonalWin() {
 
         for (int i = 0; i < 5; i++) {
@@ -85,7 +83,7 @@ public class ButtonFactory {
 
                 canBingoDiagonalRight++;
             }else {
-//                canBingoDiagonalRight = 0;
+                canBingoDiagonalRight = 0;
             }
             if(canBingoDiagonalRight == 5) {
                 canBingoDiagonalRight = 0;
@@ -106,6 +104,7 @@ public class ButtonFactory {
                 return true;
             }
             count++;
+//            System.out.println(count);
         }
 
         return false;
