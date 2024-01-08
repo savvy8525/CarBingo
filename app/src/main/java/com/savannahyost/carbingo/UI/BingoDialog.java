@@ -20,14 +20,14 @@ public class BingoDialog {
                 .setPositiveButton("Replay?", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        System.out.println("replay");
+//                        System.out.println("replay");
                         activity.recreate();
                     }
                 })
                 .setNegativeButton("Main Menu", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        System.out.println("main menu");
+//                        System.out.println("main menu");
                         Intent intent = new Intent(activity, MainActivity.class);
                         activity.startActivity(intent);
                     }

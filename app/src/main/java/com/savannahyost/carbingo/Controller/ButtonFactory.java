@@ -33,24 +33,27 @@ public class ButtonFactory {
     }
 
     //sets a row to bingo when there are five in a row
-    public static boolean checkRowWin(int k, int l) {
-        //Row Bingo - works
-        if(bingoCardMatrix[k][l]) {
-//            System.out.println(" k: " + k + "l: " + l );
-            canBingoRow++;
-        }else {
+    public static boolean checkRowWin() {
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if(bingoCardMatrix[i][j]) {
+                    canBingoRow++;
+//                    System.out.println(canBingoRow);
+                }
+                if(canBingoRow == 5) {
+                    canBingoRow = 0;
+                    return true;
+                }
+            }
             canBingoRow = 0;
         }
 
-        if(canBingoRow == 5) {
-            System.out.println("bingo");
-            canBingoRow = 0;
-            return true;
-        }
         return false;
     }
 
     //sets a column to bingo when there are five selected in a column
+    //works
     public static boolean checkColumnWin() {
 
         for (int i = 0; i < 5; i++) {
@@ -58,20 +61,19 @@ public class ButtonFactory {
                 if(bingoCardMatrix[j][i]) {
                     canBingoColumn++;
 //                    System.out.println(canBingoColumn);
-                }else {
-                    canBingoColumn = 0;
                 }
                 if(canBingoColumn == 5) {
                     canBingoColumn = 0;
                     return true;
                 }
             }
-            
+            canBingoColumn = 0;
         }
 
         return false;
 
     }
+
     //sets a diagonal to bingo when there are five selected from corner to corner
     //Try switching false/true
     public static boolean checkDiagonalWin() {
@@ -102,6 +104,7 @@ public class ButtonFactory {
                 return true;
             }
             count++;
+//            System.out.println(count);
         }
 
         return false;
