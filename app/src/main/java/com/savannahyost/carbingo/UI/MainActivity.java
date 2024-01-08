@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
             carBingoChar[i] = findViewById(carBingoTextID[i]);
         }
         uiAnimations.gradientFadeIn(carBingoChar);
-
-
-
-
         Button city = findViewById(R.id.cityCard);
         Button licensePlate = findViewById(R.id.licensePlateCard);
 
